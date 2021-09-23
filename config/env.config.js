@@ -1,5 +1,7 @@
 //is the environment variables configuration file
+require("dotenv").config();
 
+console.log(process.env.MONGODB_URI);
 module.exports = {
   port: process.env.PORT || 3000,
   environment: "dev",
